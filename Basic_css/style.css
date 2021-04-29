@@ -1,0 +1,21 @@
+h3{
+    color: aqua  !important; /* highest priority , but never use this */
+}
+/*check selector specificity */
+#first{
+    color: coral;
+}
+
+.myclass + ul{
+    list-style: none;
+}
+/* .navlinks:nt-child(1) is similar to given below*/
+.navlinks > li{
+    color:brown;
+}
+
+.navlinks li:nth-child(2){
+    color: blueviolet;
+}
+
+

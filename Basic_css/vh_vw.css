@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+div{
+    min-height: 50vh;
+    font-size: calc(2.4rem +1vw); /* device size->340 it will divide by 100 i,e 1% so it will add 3.4 rem in 2.4rem*/
+}
+
+/* h1 will look at its parent and if it is within its height it will set atomatically
+div h1{
+    height: 50vh ;
+}
+*/
+
+div h2{
+    background: white;
+}
+/*
+@media(max-width:500px){
+body{
+    background: red;
+}
+
+html{
+    font-size: 50%;
+}
+
+}
+*/

@@ -1,0 +1,61 @@
+/*   
+px
+This is not good idea, because does not fit in responsive 
+.text{
+    font-size: 20px;
+}
+
+.text div{
+    font-size: 30px;
+}
+*/
+
+
+
+
+/*
+This is b default
+html{
+    font-size: 16px;
+}
+*/
+
+/*--------------------------------------------------------------------------------------*/
+
+/*
+em---> multiples its parent element 
+therefore-->16*1.5   
+
+*/
+.text{
+    font-size: 1.5em;
+}
+.text div{
+    /*     16*1.5*1.5**2            */
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* to break thi recurssion add px instead of em*/
+/* in   rem   it will only inherrite default parent */
+
+html{
+    font-size: 62.5%;
+}
+
+/*
+
+1rem = 10px
+if we want 16px do 1.6 rem 
+so that in browser , we can get responsive fonts abd also can
+change in browser
+
+
+*/
+.text{
+    font-size: 1.5rem;
+}
+.text div{
+    font-size: 1.5rem;
+}
