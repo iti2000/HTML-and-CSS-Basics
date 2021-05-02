@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$primary : #303146;
+$big-font : 4rem;
+
+@mixin flex(){
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+// @mixin flex($direction,$justify){    -->like this we can make pass the variable
+//                                        -->so that we don't have to write the code again ang again
+//     display: flex;
+//     justify-content: $justify;
+//     align-items: center;
+//     flex-direction: $direction;
+   
+// }

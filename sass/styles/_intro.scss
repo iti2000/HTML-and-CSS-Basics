@@ -1,0 +1,32 @@
+
+.introduction{
+    min-height: 100vh;
+    @include flex();   //like we can include the global classes
+    flex-direction: column;
+
+    // @include flex(column,center);       -->like this we can pass the values for direction and justify...
+
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-around;
+    // align-items: center;
+
+    h2{
+        font-size: $big-font;         //like this we can also write the child inside it
+    }
+    button{
+        border: none;
+        background: $primary;
+        padding: 1rem 3rem;
+        cursor: pointer;
+        transition: all 1s ease;
+
+        &:hover{
+            background: lightcoral;
+        }
+    }
+
+    .box{
+        color: #141ed4;
+    }
+}
